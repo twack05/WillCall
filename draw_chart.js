@@ -20,15 +20,15 @@ var data = {"report_data":[{"id":"a110376e-55ca-4183-9c1c-32cebd06d592","domain_
 
         var chart_data = [{
             value: reserved,
-            color: "#F7464A",
+            color: "#FF0000",
             label: "Reserved"
           }, {
             value: purchased,
-            color: "#E2EAE9",
+            color: "#00FF00",
             label: "Purchased"
           }, {
             value: seated,
-            color: "#D4CCC5",
+            color: "#0000FF",
             label: "Seated"
           }
         ]
