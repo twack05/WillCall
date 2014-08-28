@@ -2,6 +2,10 @@ var setData = function() {
   // Set up the data for the Will Call Table
   var tableData;
   for (var i = 0; i < data.report_data.length; i ++) {
+    // Change nulls to N/A for display
+    if (data.report_data[i].group_code == null) {
+      data.report_data[i].group_code = "N/A";
+    }
     tableData += "<tr><td><img class='icon' src='person.png'/></td>"+
     "<td>"+data.report_data[i].pickup_first_name+" "+data.report_data[i].pickup_last_name+"</td>"+
     "<td>"+data.report_data[i].section+"</td>"+
@@ -64,10 +68,10 @@ var setCheckIn = function(){
     // Update chart and table with new information
     drawChart();
     // Keep chart the same size
-    $('#myChart').attr("width", "600");
-    $('#myChart').attr("height", "600");
-    $('#myChart').css("height", "300px");
-    $('#myChart').css("width", "300px");
+    $('#pieChart').attr("width", "600");
+    $('#pieChart').attr("height", "600");
+    $('#pieChart').css("height", "300px");
+    $('#pieChart').css("width", "300px");
     // Update seat status
     $(this).closest('tr').children('#status').text('seated');
     $(this).parent().text("Enjoy the show!");

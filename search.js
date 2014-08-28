@@ -3,7 +3,7 @@ $('#search').keyup(function() {
 });
 
 function searchTable(inputVal) {
-  var table = $('#myTable');
+  var table = $('#willCallTable');
   table.find('tr').each(function(index, row)
   {
     var allCells = $(row).find('td');
