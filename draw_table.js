@@ -13,7 +13,7 @@ var setData = function() {
   // Set up the data for the Tickets table
     var ticketData;
      for (ticket in data.report_data[i].tickets) {
-        ticketData += "<tr class='ticket"+i+" hidden'><td>"+data.report_data[i].tickets[ticket].id+"</td>"+
+        ticketData += "<tr class='ticket"+i+" hidden search'><td>"+data.report_data[i].tickets[ticket].id+"</td>"+
               "<td>"+data.report_data[i].tickets[ticket].event_name+"</td>"+
               "<td>"+data.report_data[i].tickets[ticket].showtime_id+"</td>"+
               "<td>"+data.report_data[i].tickets[ticket].title+"</td>"+
