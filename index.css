@@ -1,17 +1,33 @@
-
-
-.text-center {
-  text-align: center
+body {
+ font-family: 'Arimo', Arial
+}
+.content {
+  background-color: #FFFFF2;
+  border-radius: 0.5em;
+  margin-top: 100px
 }
 
 .container {
   border: 1px solid #dddddd;
-  width: 313px
+  width: 313px;
+  box-shadow: 0 0 0.25em 0.25em #ccc;
+  border-radius: 0.5em;
+  padding-bottom: 16px
 }
 
 .tables {
   clear: both;
   float: left
+}
+
+table {
+  box-shadow: 0 0 0.25em 0.25em #ccc;
+  border-radius: 0.5em
+}
+
+#search {
+  box-shadow: 0 0 0.25em 0.25em #ccc;
+  border-radius: 0.5em
 }
 
 tr:hover {
@@ -22,5 +38,18 @@ table tr:nth-of-type(even):hover {
   background-color: #dddddd
 }
 
+.icon {
+  height: 30px;
+  width: 40px
+}
 
+.ticket {
+  height: 40px;
+  width: 50px
+}
+
+.btn {
+  border-radius: 0.5em;
+  background-color: #FEF5CA
+}
 

@@ -2,23 +2,25 @@ var setData = function() {
   // Set up the data for the Will Call Table
   var tableData;
   for (var i = 0; i < data.report_data.length; i ++) {
-    tableData += "<tr><td>"+data.report_data[i].pickup_first_name+" "+data.report_data[i].pickup_last_name+"</td>"+
+    tableData += "<tr><td><img class='icon' src='person.png'/></td>"+
+    "<td>"+data.report_data[i].pickup_first_name+" "+data.report_data[i].pickup_last_name+"</td>"+
     "<td>"+data.report_data[i].section+"</td>"+
     "<td>"+data.report_data[i].ticket_count+"</td>"+
     "<td>"+data.report_data[i].group_code+"</td>"+
-    "<td><input type='button' value='View Tickets' id='ticket"+i+"'></input></td></tr>";
+    "<td><input type='button' class='btn' value='View Tickets' id='ticket"+i+"'></input></td></tr>";
 
     $('#tableData').html(tableData);
 
   // Set up the data for the Tickets table
     var ticketData;
      for (ticket in data.report_data[i].tickets) {
-        ticketData += "<tr class='ticket"+i+" hidden search'><td>"+data.report_data[i].tickets[ticket].id+"</td>"+
+        ticketData += "<tr class='ticket"+i+" hidden'><td><img class='ticket' src='ticket.jpg'/></td>"+
+              "<td>"+data.report_data[i].tickets[ticket].id+"</td>"+
               "<td>"+data.report_data[i].tickets[ticket].event_name+"</td>"+
               "<td>"+data.report_data[i].tickets[ticket].showtime_id+"</td>"+
               "<td>"+data.report_data[i].tickets[ticket].title+"</td>"+
               "<td id='status'>"+data.report_data[i].tickets[ticket].status+"</td>"+
-              "<td><input type='button' value='Check In' class='check-in' id='"+i+","+data.report_data[i].tickets[ticket].id+"'></input></td></tr>";
+              "<td><input type='button' value='Check In' class='check-in btn' id='"+i+","+data.report_data[i].tickets[ticket].id+"'></input></td></tr>";
 
         $('.ticketData').html(ticketData);
 

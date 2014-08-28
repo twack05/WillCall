@@ -3,89 +3,97 @@
   <head>
     <title>Todd Wacker's Will Call</title>
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.3.3/css/foundation.css"/>
+    <link href="http://fonts.googleapis.com/css?family=Arimo" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="index.css"/>
   </head>
   <body>
-    <h3 class="text-center">Will Call</h3>
-    <div class="row content">
-      <div class="extra-small-6 columns large-4">
-        <div class="container">
-          <table id="legend">
-            <tr>
-              <td style="background-color: #FF0000;"></td>
-              <td>Reserved</td>
-              <td style="background-color: #00FF00;"></td>
-              <td>Purchased</td>
-              <td style="background-color: #0000FF;"></td>
-              <td>Seated</td>
-            </tr>
-          </table>
-          <canvas id="myChart" width="300em" height="300em"></canvas>
+      <div class="row content">
+        <h3 class="text-center">Will Call</h3>
+        <div class="extra-small-6 columns large-4">
+          <div class="container">
+            <table id="legend">
+              <tr>
+                <td style="background-color: #FF0000;"></td>
+                <td>Reserved</td>
+                <td style="background-color: #00FF00;"></td>
+                <td>Purchased</td>
+                <td style="background-color: #0000FF;"></td>
+                <td>Seated</td>
+              </tr>
+            </table>
+            <canvas id="myChart" width="300em" height="300em"></canvas>
+          </div>
         </div>
-      </div>
-      <div class="extra-small-6 columns large-8">
-        <div class="tables">
-          <table id="myTable">
-            <input type="text" id="search" placeholder="Search by Name"></input>
-            <tr>
-              <th>
-                Name
-              </th>
-              <th>
-                Section
-              </th>
-              <th>
-                Number of Tickets
-              </th>
-              <th>
-                Group Code
-              </th>
-              <th>
-              </th>
-            </tr>
-            <tbody id="tableData">
-            </tbody>
-          </table>
+        <div class="extra-small-6 columns large-8">
+          <div class="tables">
+            <table id="myTable">
+              <input type="text" id="search" placeholder="Search"></input>
+              <tr>
+                <th>
+                </th>
+                <th>
+                  Name
+                </th>
+                <th>
+                  Section
+                </th>
+                <th>
+                  Number of Tickets
+                </th>
+                <th>
+                  Group Code
+                </th>
+                <th>
+                </th>
+              </tr>
+              <tbody id="tableData">
+              </tbody>
+            </table>
 
-          <table>
-            <thead id="ticketHead">
-            <tr>
-              <th>
-                Ticket ID
-              </th>
-              <th>
-                Event
-              </th>
-              <th>
-                Showtime
-              </th>
-              <th>
-                Seating
-              </th>
-              <th>
-                Status
-              </th>
-              <th>
-              </th>
-            </tr>
-            </thead>
-            <tbody class="ticketData">
-            </tbody>
-          </table>
-        </div><!-- tables -->
-      </div>
-    </div><!-- row -->
+            <table>
+              <thead id="ticketHead">
+              <tr>
+                <th>
+                </th>
+                <th>
+                  Ticket ID
+                </th>
+                <th>
+                  Event
+                </th>
+                <th>
+                  Showtime
+                </th>
+                <th>
+                  Seating
+                </th>
+                <th>
+                  Status
+                </th>
+                <th>
+                </th>
+              </tr>
+              </thead>
+              <tbody class="ticketData">
+              </tbody>
+            </table>
+          </div><!-- tables -->
+        </div>
+      </div><!-- row -->
 
     <!-- jQuery -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <!-- Charts.js -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/Chart.js/0.2.0/Chart.min.js"></script>
-
+    <!-- Backstretch -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
     <!-- Draw Chart -->
     <script src="draw_chart.js"></script>
     <!-- Draw Table -->
     <script src="draw_table.js"></script>
     <!-- Search -->
     <script src="search.js"></script>
+    <!-- Backstretch image -->
+    <script src="backstretch.js"></script>
   </body>
 </html>
