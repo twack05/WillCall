@@ -7,67 +7,72 @@
   </head>
   <body>
     <h3 class="text-center">Will Call</h3>
-    <div class="row">
-      <div class="small-4 columns">
-        <table id="legend">
-          <tr>
-            <td style="background-color: #FF0000;"></td>
-            <td>Reserved</td>
-            <td style="background-color: #00FF00;"></td>
-            <td>Purchased</td>
-            <td style="background-color: #0000FF;"></td>
-            <td>Seated</td>
-          </tr>
-        </table>
-        <canvas id="myChart" width="300em" height="300em"></canvas>
+    <div class="row content">
+      <div class="extra-small-6 columns large-4">
+        <div class="container">
+          <table id="legend">
+            <tr>
+              <td style="background-color: #FF0000;"></td>
+              <td>Reserved</td>
+              <td style="background-color: #00FF00;"></td>
+              <td>Purchased</td>
+              <td style="background-color: #0000FF;"></td>
+              <td>Seated</td>
+            </tr>
+          </table>
+          <canvas id="myChart" width="300em" height="300em"></canvas>
+        </div>
       </div>
-      <div class="small-8 columns">
-        <table id="myTable">
-          <tr>
-            <th>
-              Name
-            </th>
-            <th>
-              Section
-            </th>
-            <th>
-              Number of Tickets
-            </th>
-            <th>
-              Group Code
-            </th>
-            <th>
-            </th>
-          </tr>
-          <tbody id="tableData">
-          </tbody>
-        </table>
+      <div class="extra-small-6 columns large-8">
+        <div class="tables">
+          <table id="myTable">
+            <input type="text" placeholder="Search by Name"></input>
+            <tr>
+              <th>
+                Name
+              </th>
+              <th>
+                Section
+              </th>
+              <th>
+                Number of Tickets
+              </th>
+              <th>
+                Group Code
+              </th>
+              <th>
+              </th>
+            </tr>
+            <tbody id="tableData">
+            </tbody>
+          </table>
 
-        <table>
-          <thead id="ticketHead">
-          <tr>
-            <th>
-              Ticket ID
-            </th>
-            <th>
-              Event
-            </th>
-            <th>
-              Showtime
-            </th>
-            <th>
-              Seating
-            </th>
-            <th>
-              Status
-            </th>
-            <th>
-            </th>
-          </tr>
-          </thead>
-          <tbody class="ticketData">
-          </tbody>
-        </table>
+          <table>
+            <thead id="ticketHead">
+            <tr>
+              <th>
+                Ticket ID
+              </th>
+              <th>
+                Event
+              </th>
+              <th>
+                Showtime
+              </th>
+              <th>
+                Seating
+              </th>
+              <th>
+                Status
+              </th>
+              <th>
+              </th>
+            </tr>
+            </thead>
+            <tbody class="ticketData">
+            </tbody>
+          </table>
+        </div><!-- tables -->
       </div>
     </div><!-- row -->
 

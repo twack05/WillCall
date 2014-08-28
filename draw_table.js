@@ -44,6 +44,16 @@ var setJquery = function() {
 var setCheckIn = function(){
   $('.check-in').on('click', function(e){
     e.preventDefault();
+    // In reality, this would be an AJAX call to patch the updated data to the API and re-render the view.
+    // Something like $.ajax(
+    //  type: "PATCH",
+    //  url: "/tickets/:id",
+    //  success: function () {
+    //    re-render view
+    //  }
+    //  )
+    // This could also be done with Backbone, by setting an event listener on the model - when the model
+    // is updated, the view could automatically be re-rendered.
     var params = this.id.split(',');
     for (var i = 0; i < data.report_data[params[0]].tickets.length; i++)
     if (data.report_data[params[0]].tickets[i].id == params[1]) {
@@ -51,9 +61,14 @@ var setCheckIn = function(){
     }
     // Update chart and table with new information
     drawChart();
+    // Keep chart the same size
+    $('#myChart').attr("width", "600");
+    $('#myChart').attr("height", "600");
     $('#myChart').css("height", "300px");
     $('#myChart').css("width", "300px");
+    // Update seat status
     $(this).closest('tr').children('#status').text('seated');
+    $(this).parent().text("Enjoy the show!");
   });
 };
 
