@@ -16,6 +16,21 @@ body {
   padding-bottom: 16px
 }
 
+#reserved {
+  color: white;
+  font-size: 11px
+}
+
+#seated {
+  color: white;
+  font-size: 11px
+}
+
+#purchased {
+  color: black;
+  font-size: 11px
+}
+
 .tables {
   clear: both;
   float: left

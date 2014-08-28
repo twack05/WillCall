@@ -45,7 +45,9 @@ var data = {"report_data":[{"id":"a110376e-55ca-4183-9c1c-32cebd06d592","domain_
         var options = {
           animateRotate: false
         };
-
+        $('#seated').text(seated);
+        $('#purchased').text(purchased);
+        $('#reserved').text(reserved);
         //Get the context of the canvas element
         var ctx = document.getElementById("myChart").getContext("2d");
         myNewChart = new Chart(ctx).Pie(chart_data, options);
